@@ -19,7 +19,7 @@ queue times for each registered checkpoint in the airport at the specified inter
 
 ## Example Output
 
-![img.png](example-image.png)
+![example-image.png](example-image.png)
 
 ### Disclaimer
 

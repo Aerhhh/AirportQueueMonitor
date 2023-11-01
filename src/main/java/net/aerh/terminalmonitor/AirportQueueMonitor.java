@@ -30,8 +30,14 @@ public class AirportQueueMonitor {
     public static void main(String[] args) {
         System.out.print("Loading...");
         
-        loadTerminalMap();
-        getQueueTimes();
+        Timer timer = new Timer();
+        
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                loadTerminalMap();
+            }
+        }, 0, Duration.ofDays(7).toMillis());
         
         Scanner scanner = new Scanner(System.in);
         int alertInterval = 0;
@@ -47,7 +53,6 @@ public class AirportQueueMonitor {
         
         System.out.println();
         
-        Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
