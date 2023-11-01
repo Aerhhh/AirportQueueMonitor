@@ -92,6 +92,8 @@ public class AirportQueueMonitor {
     }
     
     private static void loadTerminalMap() {
+        terminalMap.clear();
+        
         try {
             JSONObject pois = fetchDynamicPOIs();
             pois.keySet().forEach(key -> {
