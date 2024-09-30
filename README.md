@@ -1,4 +1,4 @@
-# Airport Queue Monitor
+# John F. Kennedy Airport Queue Monitor
 
 A Java program that grabs and outputs the current queue times for security checkpoints at the John F. Kennedy
 International Airport.
@@ -14,8 +14,9 @@ tl;dr: I was bored.
 
 # Usage
 
-To run the program, simply run the `main` method in `AirportQueueMonitor.java`. The program will output the current
-queue times for each registered checkpoint in the airport at the specified interval.
+To run the program, run the `main` method in `AirportQueueMonitor.java`. You can also compile this program locally and run 
+it as a JAR application, however one is not provided. The program will output the current queue times for each registered 
+checkpoint in the airport at the specified interval.
 
 ## Example Output
 
